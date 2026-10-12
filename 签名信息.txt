@@ -1,0 +1,14 @@
+签名密钥信息（已自动配置进 build.yml，无需手动操作）
+==========================================================
+Keystore 密码 : anquan123
+密钥别名       : anquan-key
+密钥密码       : anquan123
+有效期         : 10000 天（约 27 年）
+证书持有者     : CN=B类安全员题库, OU=安全考核, O=AnQuan, L=Wuzhong, ST=Ningxia, C=CN
+
+⚠️ 重要提醒：
+1. 这个密钥只用于自签名测试，请勿用于商业发布。
+2. 如果想自己换密钥，请运行：
+   keytool -genkeypair -v -keystore 新密钥.jks -storepass 你的密码 \
+           -keypass 你的密码 -alias 别名 -keyalg RSA -keysize 2048 -validity 10000
+3. 签名密钥丢了就无法覆盖升级，请务必保存好。
